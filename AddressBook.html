@@ -37,4 +37,69 @@
             </div>
         </div>
 
-       
+<!--UC3 Creating fields as name address city state zip and phone number-->
+
+        <!--Adding field for full name-->
+        <div class="row-content">
+            <label class="label text" for="fullname">Full Name
+                <input class="input" type="text" id="fullName" name="fullName" placeholder="Enter Your Full Name"
+                    required>
+                <error-output class="text-error" for="text"></error-output>
+            </label>
+        </div>
+
+
+        <!--Adding field for phone number-->
+        <div class="row-content">
+            <label class="label text" for="tel">Phone Number
+                <input type="tel" id="tel" name="tel" class="input">
+                <error-output class="text-error" for="text"></error-output>
+            </label>
+        </div>
+
+        <!--Adding field for address-->
+        <div class="row-content">
+            <label class="label text" for="address">Address
+                <input class="input address-input" type="text" id="address" placeholder="Address" required>
+                <error-output class="text-error" for="text"></error-output>
+            </label>
+
+        </div>
+
+        <!--Adding input field for selecting city name and state name-->
+        <div class="select-input-fields">
+            <label class="label text" for="city">City
+                <select id="city" name="city">
+                    <option value="" disabled selected hidden>Select City</option>
+                    <option value="Lucknow">Lucknow</option>
+                    <option value="Uttrakhand">Uttrakhand</option>
+                    <option value="Delhi">Delhi</option>
+                    <option value="Bangalore">Bangalore</option>
+                    <option value="Prayagraj">Prayagraj</option>
+                    <option value="Noida">Noida</option>
+                </select>
+            </label>
+
+            <label class="label-text-select" for="state">State
+                <select id="state" name="state">
+                    <option value="" disabled selected hidden>Select State</option>
+                    <option value="Uttar Pradesh">Uttar Pradesh</option>
+                    <option value="Dehradun">Dehradun</option>
+                    <option value="Karnatka">Karnatka</option>
+                </select>
+            </label>
+
+            <label class="label-text-select" for="zip">Zip Code
+                <input class="input" type="text" id="zipcode" name="zipcode" placeholder="Zip Code" required>
+            </label>
+        </div>
+
+        <!--Added buttons for saving and resetting-->
+        <div class="buttonParent">
+            <div class="submit-reset">
+                <button type="submit" class="button submitButton" id="submitButton">Add</button>
+                <button type="reset" class="button resetButton">Reset</button>
+            </div>
+        </div>
+    </form>
+</div>       
