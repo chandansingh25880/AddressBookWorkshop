@@ -58,7 +58,7 @@ const save = (event) => {
     }
  };
 
- /**Adding to local storage and update */
+ /**Adding to local storage */
  function createAndUpdateStorage(addContactData) {
 
     let contactDataList = JSON.parse(localStorage.getItem("ContactDataList"));
